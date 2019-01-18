@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation" >
+
+    <string-array name="emoji_name">
+        <item>[#微笑]</item>
+        <item>[#太开心]</item>
+        <item>[#可爱]</item>
+        <item>[#失望]</item>
+        <item>[#衰]</item>
+        <item>[#睡觉]</item>
+        <item>[#思考]</item>
+        <item>[#偷笑]</item>
+        <item>[#吐]</item>
+        <item>[#抠鼻]</item>
+        <item>[#委屈]</item>
+        <item>[#呲牙]</item>
+        <item>[#嘘]</item>
+        <item>[#阴险]</item>
+        <item>[#疑问]</item>
+        <item>[#晕]</item>
+        <item>[#抓狂]</item>
+        <item>[#左哼哼]</item>
+        <item>[#右哼哼]</item>
+        <item>[#鼓掌]</item>
+        <item>[#汗]</item>
+        <item>[#大哭]</item>
+        <item>[#困]</item>
+        <item>[#酷]</item>
+        <item>[#猪头]</item>
+        <item>[#愤怒]</item>
+        <item>[#爱你]</item>
+        <item>[#心碎]</item>
+        <item>[#GOOD]</item>
+        <item>[#过来]</item>
+        <item>[#OK]</item>
+        <item>[#拳头]</item>
+        <item>[#握手]</item>
+        <item>[#弱]</item>
+        <item>[#胜利]</item>
+        <item>[#蛋糕]</item>
+        <item>[#礼物]</item>
+        <item>[#蜡烛]</item>
+        <item>[#太阳]</item>
+        <item>[#月夜]</item>
+        <item>[#闪电]</item>
+        <item>[#囧]</item>
+        <item>[#玫瑰]</item>
+        <item>[#饮料]</item>
+        <item>[#吉他]</item>
+        <item>[#钱]</item>
+        <item>[#雨伞]</item>
+        <item>[#汉堡]</item>
+        <item>[#面条]</item>
+        <item>[#苹果]</item>
+        <item>[#麦克风]</item>
+        <item>[#圣诞树]</item>
+        <item>[#兔子]</item>
+        <item>[#CD]</item>
+        <item>[#音乐]</item>
+        <item>[#气球]</item>
+        <item>[#相机]</item>
+        <item>[#手机]</item>
+        <item>[#下雨]</item>
+        <item>[#雪人]</item>
+        <item>[#神马]</item>
+        <item>[#V5]</item>
+        <item>[#落叶]</item>
+        <item>[#微风]</item>
+    </string-array>
+    <string-array name="emoji_code">
+        <item>[#Smile]</item>
+        <item>[#Laugh]</item>
+        <item>[#Pleased]</item>
+        <item>[#Disappointment]</item>
+        <item>[#InTheDark]</item>
+        <item>[#Sleep]</item>
+        <item>[#Think]</item>
+        <item>[#Chuckle]</item>
+        <item>[#Puke]</item>
+        <item>[#PickNose]</item>
+        <item>[#Distressed]</item>
+        <item>[#Grin]</item>
+        <item>[#Hush]</item>
+        <item>[#Sly]</item>
+        <item>[#Confused]</item>
+        <item>[#Dizzy]</item>
+        <item>[#Scream]</item>
+        <item>[#SnubLeft]</item>
+        <item>[#SnubRight]</item>
+        <item>[#Clap]</item>
+        <item>[#Sweating]</item>
+        <item>[#Sob]</item>
+        <item>[#Drowsy]</item>
+        <item>[#Cool]</item>
+        <item>[#Pig]</item>
+        <item>[#OnFire]</item>
+        <item>[#Heart]</item>
+        <item>[#BrokenHeart]</item>
+        <item>[#good]</item>
+        <item>[#Beckon]</item>
+        <item>[#ok]</item>
+        <item>[#Fist]</item>
+        <item>[#handshake]</item>
+        <item>[#ThumbsDown]</item>
+        <item>[#Victory]</item>
+        <item>[#Cake]</item>
+        <item>[#Gift]</item>
+        <item>[#Glim]</item>
+        <item>[#Sun]</item>
+        <item>[#Moon]</item>
+        <item>[#Lightning]</item>
+        <item>[#Embarrassed]</item>
+        <item>[#Rose]</item>
+        <item>[#Drink]</item>
+        <item>[#Guitar]</item>
+        <item>[#Money]</item>
+        <item>[#Umbrella]</item>
+        <item>[#Hamburger]</item>
+        <item>[#Noodle]</item>
+        <item>[#Apple]</item>
+        <item>[#Microphone]</item>
+        <item>[#ChristmasTrees]</item>
+        <item>[#Rabbit]</item>
+        <item>[#cd]</item>
+        <item>[#Music]</item>
+        <item>[#Balloon]</item>
+        <item>[#Camera]</item>
+        <item>[#Mobile]</item>
+        <item>[#Rain]</item>
+        <item>[#Snowman]</item>
+        <item>[#GodHorses]</item>
+        <item>[#v5]</item>
+        <item>[#FallenLeaves]</item>
+        <item>[#Breeze]</item>
+    </string-array>
+    <string-array name="quit_items">
+        <item>退出当前账号</item>
+        <item>关闭微微交友</item>
+    </string-array>
+    <string-array name="login_history_more">
+        <item>切换账号</item>
+        <item>注册</item>
+    </string-array>
+
+    <string-array name="marry_state">
+        <item>单身</item>
+        <item>热恋</item>
+    </string-array>
+
+    <string-array name="blood_type">
+        <item>A型</item>
+        <item>B型</item>
+        <item>AB型</item>
+        <item>O型</item>
+    </string-array>
+
+    <string-array name="constellation">
+        <item>水瓶座</item>
+        <item>双鱼座</item>
+        <item>白羊座</item>
+        <item>金牛座</item>
+        <item>双子座</item>
+        <item>巨蟹座</item>
+        <item>狮子座</item>
+        <item>处女座</item>
+        <item>天枰座</item>
+        <item>天蝎座</item>
+        <item>射手座</item>
+        <item>摩羯座</item>
+    </string-array>
+
+    <string-array name="tall">
+        <item>145cm</item>
+        <item>146cm</item>
+        <item>147cm</item>
+        <item>148cm</item>
+        <item>149cm</item>
+        <item>150cm</item>
+        <item>151cm</item>
+        <item>152cm</item>
+        <item>153cm</item>
+        <item>154cm</item>
+        <item>155cm</item>
+        <item>156cm</item>
+        <item>157cm</item>
+        <item>158cm</item>
+        <item>159cm</item>
+        <item>160cm</item>
+        <item>161cm</item>
+        <item>162cm</item>
+        <item>163cm</item>
+        <item>164cm</item>
+        <item>165cm</item>
+        <item>166cm</item>
+        <item>167cm</item>
+        <item>168cm</item>
+        <item>169cm</item>
+        <item>170cm</item>
+        <item>171cm</item>
+        <item>172cm</item>
+        <item>173cm</item>
+        <item>174cm</item>
+        <item>175cm</item>
+        <item>176cm</item>
+        <item>177cm</item>
+        <item>178cm</item>
+        <item>179cm</item>
+        <item>180cm</item>
+        <item>181cm</item>
+        <item>182cm</item>
+        <item>183cm</item>
+        <item>184cm</item>
+        <item>185cm</item>
+        <item>186cm</item>
+        <item>187cm</item>
+        <item>188cm</item>
+        <item>189cm</item>
+        <item>190cm</item>
+        <item>191cm</item>
+        <item>192cm</item>
+        <item>193cm</item>
+        <item>194cm</item>
+        <item>195cm</item>
+        <item>196cm</item>
+        <item>197cm</item>
+        <item>198cm</item>
+        <item>199cm</item>
+        <item>200cm</item>
+    </string-array>
+
+    <string-array name="weight">
+        <item>35kg</item>
+        <item>36kg</item>
+        <item>37kg</item>
+        <item>38kg</item>
+        <item>39kg</item>
+        <item>40kg</item>
+        <item>41kg</item>
+        <item>42kg</item>
+        <item>43kg</item>
+        <item>44kg</item>
+        <item>45kg</item>
+        <item>46kg</item>
+        <item>47kg</item>
+        <item>48kg</item>
+        <item>49kg</item>
+        <item>50kg</item>
+        <item>51kg</item>
+        <item>52kg</item>
+        <item>53kg</item>
+        <item>54kg</item>
+        <item>55kg</item>
+        <item>56kg</item>
+        <item>57kg</item>
+        <item>58kg</item>
+        <item>59kg</item>
+        <item>60kg</item>
+        <item>61kg</item>
+        <item>62kg</item>
+        <item>63kg</item>
+        <item>64kg</item>
+        <item>65kg</item>
+        <item>66kg</item>
+        <item>67kg</item>
+        <item>68kg</item>
+        <item>69kg</item>
+        <item>70kg</item>
+        <item>71kg</item>
+        <item>72kg</item>
+        <item>73kg</item>
+        <item>74kg</item>
+        <item>75kg</item>
+        <item>76kg</item>
+        <item>77kg</item>
+        <item>78kg</item>
+        <item>79kg</item>
+        <item>80kg</item>
+    </string-array>
+
+    <string-array name="female_sex_part">
+        <item>眼睛</item>
+        <item>鼻子</item>
+        <item>胸部</item>
+        <item>臀部</item>
+        <item>头发</item>
+        <item>身材</item>
+        <item>腿</item>
+        <item>手</item>
+        <item>嘴</item>
+    </string-array>
+
+    <string-array name="male_sex_part">
+        <item>眼睛</item>
+        <item>耳朵</item>
+        <item>鼻子</item>
+        <item>头发</item>
+        <item>身材</item>
+        <item>腿</item>
+        <item>胸肌</item>
+        <item>嘴</item>
+    </string-array>
+
+    <string-array name="female_lable">
+        <item>萌</item>
+        <item>吃货</item>
+        <item>宅</item>
+        <item>起床困难户</item>
+        <item>白富美</item>
+        <item>女神经</item>
+        <item>女神</item>
+        <item>文艺</item>
+        <item>文静</item>
+        <item>小清新</item>
+        <item>妩媚</item>
+        <item>妖艳</item>
+    </string-array>
+
+    <string-array name="male_lable">
+        <item>暖男</item>
+        <item>大叔</item>
+        <item>八块腹肌</item>
+        <item>长腿欧巴</item>
+        <item>高富帅</item>
+        <item>阳光</item>
+        <item>宅</item>
+        <item>光棍一枚</item>
+        <item>有胸肌</item>
+        <item>帅酷</item>
+    </string-array>
+
+    <string-array name="age">
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+    </string-array>
+
+    <string-array name="occupation">
+        <item>在校学生</item>
+        <item>军人</item>
+        <item>私营业主</item>
+        <item>企业职工</item>
+        <item>农业劳动者</item>
+        <item>政府机关/事业单位工作者</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="education">
+        <item>小学</item>
+        <item>初中</item>
+        <item>职高</item>
+        <item>高中</item>
+        <item>中专</item>
+        <item>大专</item>
+        <item>本科</item>
+    </string-array>
+
+    <string-array name="purpose">
+        <item>找个情人</item>
+        <item>长期X伴侣</item>
+        <item>偶尔放纵</item>
+        <item>假日X伙伴</item>
+        <item>都可以啦</item>
+    </string-array>
+
+    <string-array name="where">
+        <item>家里</item>
+        <item>宾馆</item>
+        <item>车上</item>
+        <item>野外</item>
+    </string-array>
+
+    <string-array name="doWhatFirst">
+        <item>一起吃饭，看电影</item>
+        <item>如果喜欢，可以拉手散步</item>
+        <item>如果喜欢，可以拥抱亲吻</item>
+        <item>如果喜欢，可以开房爱爱</item>
+    </string-array>
+
+    <string-array name="conception">
+        <item>金钱至上</item>
+        <item>好聚好散</item>
+        <item>顺其自然</item>
+        <item>从一而终</item>
+        <item>大胆开放</item>
+    </string-array>
+
+    <string-array name="intrest">
+        <item>读书</item>
+        <item>看电影</item>
+        <item>旅行</item>
+        <item>蹦极</item>
+        <item>运动</item>
+        <item>唱歌</item>
+        <item>交友</item>
+        <item>听音乐</item>
+    </string-array>
+
+    <string-array name="appointment_content">
+        <item>看电影</item>
+        <item>吃饭</item>
+        <item>逛街</item>
+        <item>唱歌</item>
+        <item>运动</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="appointment_long">
+        <item>1小时</item>
+        <item>2小时</item>
+        <item>3小时</item>
+        <item>4小时</item>
+        <item>5小时</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/footer"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal">
+
+	<com.facebook.drawee.view.SimpleDraweeView
+		android:id="@+id/portrait_1"
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:layout_gravity="center_vertical"
+		android:layout_marginLeft="15dp"
+		android:contentDescription="@null"
+		app:actualImageScaleType="fitCenter"
+		app:failureImage="@mipmap/default_head"
+		app:placeholderImage="@mipmap/default_head"
+		app:placeholderImageScaleType="fitCenter"
+		app:roundAsCircle="true"/>
+
+	<com.facebook.drawee.view.SimpleDraweeView
+		android:id="@+id/portrait_2"
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:layout_gravity="center_vertical"
+		android:layout_marginLeft="5dp"
+		android:contentDescription="@null"
+		app:actualImageScaleType="fitCenter"
+		app:failureImage="@mipmap/default_head"
+		app:placeholderImage="@mipmap/default_head"
+		app:placeholderImageScaleType="fitCenter"
+		app:roundAsCircle="true"/>
+
+	<com.facebook.drawee.view.SimpleDraweeView
+		android:id="@+id/portrait_3"
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:layout_gravity="center_vertical"
+		android:layout_marginLeft="5dp"
+		android:contentDescription="@null"
+		app:actualImageScaleType="fitCenter"
+		app:failureImage="@mipmap/default_head"
+		app:placeholderImage="@mipmap/default_head"
+		app:placeholderImageScaleType="fitCenter"
+		app:roundAsCircle="true"/>
+
+	<TextView
+		android:id="@+id/view_more_data"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20dp"
+		android:gravity="center_vertical"
+		android:paddingBottom="10dp"
+		android:paddingLeft="30dp"
+		android:paddingTop="10dp"
+		android:text="查看更多"
+		android:textColor="@color/colorPrimary"
+		android:textSize="@dimen/sn_16sp"/>
+</LinearLayout>

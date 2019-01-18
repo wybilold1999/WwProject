@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyanbirds.wwjy.ui.widget.SquareToWidthRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center"
+    android:padding="1dp">
+
+    <RelativeLayout
+        android:id="@+id/photo_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image_chose_selector">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:contentDescription="@null"
+            android:layout_centerInParent="true"
+            app:actualImageScaleType="centerCrop"
+            app:failureImage="@mipmap/default_pic"
+            app:placeholderImage="@mipmap/default_pic"
+            app:placeholderImageScaleType="centerCrop"
+            app:roundedCornerRadius="0dp"/>
+    </RelativeLayout>
+
+</com.cyanbirds.wwjy.ui.widget.SquareToWidthRelativeLayout>

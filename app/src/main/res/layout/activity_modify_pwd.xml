@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_actionbar_with_headerbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical" >
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/new_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:hint="@string/input_new_password"
+            fancy:met_baseColor="@color/colorPrimary"
+            fancy:met_primaryColor="@color/colorPrimary"
+            fancy:met_floatingLabelText="@string/input_new_password"
+            fancy:met_floatingLabel="highlight"
+            fancy:met_floatingLabelTextColor="@color/colorPrimary"
+            fancy:met_textColorHint="@color/gray_text"
+            fancy:met_underlineColor="@android:color/black"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/new_pwd_again"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:hint="@string/input_re_password"
+            fancy:met_baseColor="@color/colorPrimary"
+            fancy:met_primaryColor="@color/colorPrimary"
+            fancy:met_floatingLabelText="@string/input_re_password"
+            fancy:met_floatingLabel="highlight"
+            fancy:met_floatingLabelTextColor="@color/colorPrimary"
+            fancy:met_textColorHint="@color/gray_text"
+            fancy:met_underlineColor="@android:color/black"/>
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btn_sure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            fancy:fb_defaultColor="@color/colorPrimary"
+            fancy:fb_focusColor="@color/colorPrimary"
+            fancy:fb_radius="5dp"
+            fancy:fb_text="确定"
+            fancy:fb_textColor="#ffffffff"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

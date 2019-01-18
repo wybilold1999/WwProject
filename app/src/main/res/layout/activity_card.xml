@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:background="@color/divider_color"
+			  android:orientation="vertical">
+
+	<include
+		android:id="@+id/toolbar_actionbar"
+		layout="@layout/toolbar_actionbar_with_headerbar" />
+
+	<RelativeLayout
+		android:id="@+id/loading_lay"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@mipmap/bg_match_people"
+		android:layout_centerInParent="true"
+		android:visibility="gone">
+
+		<ImageView
+			android:id="@+id/radar_img"
+			android:layout_width="300dp"
+			android:layout_height="300dp"
+			android:layout_centerInParent="true"
+			android:visibility="gone" />
+
+		<ImageView
+			android:id="@+id/radar_bttom_img"
+			android:layout_width="300dp"
+			android:layout_height="300dp"
+			android:layout_centerInParent="true"
+			android:src="@drawable/amain_setting_bg" />
+
+		<ImageView
+			android:id="@+id/radar_top_img"
+			android:layout_width="300dp"
+			android:layout_height="300dp"
+			android:layout_centerInParent="true"
+			android:src="@drawable/main_setting_bg"
+			android:visibility="gone" />
+
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:background="@drawable/circle">
+
+			<com.facebook.drawee.view.SimpleDraweeView
+				android:id="@+id/portrait"
+				android:layout_width="100dp"
+				android:layout_height="100dp"
+				android:layout_centerInParent="true"
+				android:contentDescription="@null"
+				app:actualImageScaleType="fitCenter"
+				app:failureImage="@mipmap/default_head"
+				app:placeholderImage="@mipmap/default_head"
+				app:placeholderImageScaleType="fitCenter"
+				app:roundAsCircle="true"/>
+
+		</RelativeLayout>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:layout_marginBottom="80dp"
+			android:text="正为你推荐有缘的人..."
+			android:textSize="18sp"/>
+
+	</RelativeLayout>
+
+	<FrameLayout
+		android:id="@+id/data_lay"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="top"
+		android:visibility="gone">
+
+		<include layout="@layout/card_buttons" />
+
+		<com.lorentzos.flingswipe.SwipeFlingAdapterView
+			android:id="@+id/frame"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginBottom="100dp"
+			app:rotation_degrees="15"/>
+
+	</FrameLayout>
+
+</LinearLayout>

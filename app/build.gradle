@@ -1,0 +1,179 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: "com.mob.sdk"
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        applicationId "com.cyanbirds.wwjy"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 12
+        versionName "1.2.2"
+        flavorDimensions "12"
+        multiDexEnabled true
+
+        manifestPlaceholders = [
+                GETUI_APP_ID : "66Qr6vgP6d9Pwpgvjc62e5",
+                GETUI_APP_KEY : "6OYrAWV6XH6COofEBTieK3",
+                GETUI_APP_SECRET : "MzG0ZDeAKk90dTsHPzMvO1"
+        ]
+
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi' , 'armeabi-v7a'
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    greendao {
+        schemaVersion 8
+        daoPackage "com.cyanbirds.wwjy.greendao"
+        targetGenDir "src/main/java"
+    }
+
+    // 在MobSDK的扩展中注册SMSSDK的相关信息
+    MobSDK {
+        appKey "19dc888faad04"
+        appSecret "8243cac4dee4cbf25782ba99c8d090fa"
+
+        SMSSDK {
+            gui false
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    /*splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi' , 'x86', 'armeabi-v7a' , 'x86_64', 'arm64-v8a'
+            universalApk false
+        }
+    }*/
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    repositories{
+        flatDir{
+            dirs 'libs'
+        }
+    }
+
+    productFlavors {
+        baidu {}
+        c360 {}
+        xiaomi {}
+        tencent {}
+        meizu {}
+        oppo {}
+        vivo {}
+        huawei {}
+        sanxing {}
+        lianxiang {}
+        sj91 {}
+        androidmarket {}
+        sougou {}
+        uc {}
+
+        productFlavors.all { flavor ->
+            flavor.manifestPlaceholders = [UMENG_CHANNEL_ID: flavor.name]
+        }
+    }
+
+    //=================打出的包进行重命名开始========================
+    //=========apk的文件名：app_版本名称_版本号_日期_渠道号.apk
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            if (!variant.buildType.isDebuggable()) {
+                //获取签名的名字 variant.signingConfig.name
+                //要被替换的源字符串
+                def sourceFile = "-${variant.flavorName}-${variant.buildType.name}"
+                //替换的字符串
+                def replaceFile = "_${variant.productFlavors[0].name}_${packageTime()}_v${defaultConfig.versionCode}_${defaultConfig.versionName}"
+                outputFileName = output.outputFile.name.replace(sourceFile, replaceFile)
+            }
+        }
+    }
+    //=================打出的包进行重命名结束========================
+}
+//=================打出的包进行重命名开始========================
+def packageTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
+}
+//=================打出的包进行重命名结束========================
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+
+    //buterknife
+    implementation 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    //rx
+    implementation "io.reactivex.rxjava2:rxjava:2.2.1"
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+    // AutoDispose
+    implementation 'com.uber.autodispose:autodispose-android:1.0.0-RC2'
+    implementation 'com.uber.autodispose:autodispose-android:1.0.0-RC2'
+    implementation 'com.uber.autodispose:autodispose-android-archcomponents:1.0.0-RC2'
+    //net
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    // 持久化 Cookie
+    implementation 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
+
+    implementation 'org.greenrobot:greendao:3.1.1'
+    implementation 'com.github.medyo:fancybuttons:1.5@aar'
+    implementation 'com.facebook.rebound:rebound:0.3.8'
+    //pic
+    implementation 'com.facebook.fresco:fresco:0.12.0'
+    implementation "com.facebook.fresco:imagepipeline-okhttp3:0.12.0+"
+    implementation 'me.relex:photodraweeview:1.1.1'
+    implementation 'com.github.chrisbanes:PhotoView:1.3.0'
+
+    implementation 'com.github.Rukey7:TagLayout:1.0.4'
+    implementation 'com.github.yuweiguocn:GreenDaoUpgradeHelper:v1.4.0'
+    implementation 'q.rorbin:badgeview:1.1.3'
+
+    implementation 'com.tencent.bugly:crashreport:latest.release'
+    //地图
+    implementation 'com.amap.api:map2d:latest.integration'
+    implementation 'com.amap.api:search:latest.integration'
+    implementation 'com.amap.api:location:latest.integration'
+
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+
+    implementation 'com.tencent:mmkv:1.0.12'
+
+    implementation 'com.getui:sdk:2.12.5.0'
+}

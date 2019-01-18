@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_news"
+        android:icon="@mipmap/tabbar_tao_love"
+        android:title="主页" />
+    <item
+        android:id="@+id/item_lib"
+        android:icon="@mipmap/tabbar_found"
+        android:title="发现" />
+
+    <item
+        android:id="@+id/item_find"
+        android:icon="@mipmap/tabbar_my_message"
+        android:title="消息" />
+
+    <item
+        android:id="@+id/item_more"
+        android:icon="@mipmap/tabbar_personal"
+        android:title="我" />
+
+</menu>

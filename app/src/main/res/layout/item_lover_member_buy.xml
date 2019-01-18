@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginTop="10dp">
+
+	<TextView
+		android:id="@+id/preferential"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="10dp"
+		android:text="12个月尊贵红娘会员"
+		android:textColor="@color/body_text_1"
+		android:textSize="16sp"/>
+
+	<Button
+		android:id="@+id/buy"
+		android:layout_width="60dp"
+		android:layout_height="35dp"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="10dp"
+		android:background="@drawable/button_radius_background"
+		android:text="￥120.0"
+		android:textColor="@android:color/white"
+		android:textSize="12sp"/>
+
+	<TextView
+		android:id="@+id/desciption"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/buy"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="3dp"
+		android:layout_marginBottom="5dp"
+		android:text="普通会员+赚钱会员+20000金币+12次红娘牵线+拓展优质异性"
+		android:textSize="12sp"/>
+
+</RelativeLayout>

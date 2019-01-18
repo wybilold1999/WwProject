@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<android.support.v4.widget.SwipeRefreshLayout
+			android:id="@+id/swipe_refresh"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/recyclerview"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="#fff"
+				android:fastScrollAlwaysVisible="true"
+				android:fastScrollEnabled="true"
+				android:scrollbarStyle="insideOverlay"
+				android:scrollbars="none"/>
+
+		</android.support.v4.widget.SwipeRefreshLayout>
+
+		<com.cyanbirds.wwjy.ui.widget.CircularProgress
+			android:id="@+id/progress_bar"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:indeterminate="true"
+			android:visibility="gone"/>
+
+	</FrameLayout>
+
+	<android.support.design.widget.FloatingActionButton
+		android:id="@+id/fab"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|end"
+		android:layout_margin="@dimen/fab_margin"
+		android:scaleType="centerCrop"
+		android:src="@mipmap/ic_shuffle"
+		app:layout_anchor="@+id/recyclerview"
+		app:layout_anchorGravity="bottom|end"/>
+
+</android.support.design.widget.CoordinatorLayout>

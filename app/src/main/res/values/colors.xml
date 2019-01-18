@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#58C5EA</color>
+    <color name="colorPrimaryDark">#58C5EA</color>
+    <color name="colorAccent">#58C5EA</color>
+
+    <color name="tab_checked">@color/colorPrimary</color>
+    <color name="tab_unchecked">#757575</color>
+
+    <!-- 图片选择背景 -->
+    <color name="image_selected_color">#7f000000</color>
+
+    <color name="color_theme">#ef9a9a</color>
+    <!-- 分割线背景 -->
+    <color name="divider_color">#E1E1E1</color>
+    <color name="tabhost_color">#F3F3F3</color>
+    <!-- tab高亮选中字体颜色 -->
+    <color name="tab_text_selector">#EF9A9A</color>
+    <!-- 灰色字体 -->
+    <color name="gray_text">#cdc8c8</color>
+
+    <color name="body_text_1">#de000000</color>
+    <color name="red">#f22f2f</color>
+    <color name="reg_default">#282727</color>
+
+    <color name="gray_background">#999999</color>
+    <color name="circle">#ff7a7a</color>
+
+    <color name="sprot_text_color">#c416ff</color>
+    <color name="music_text_color">#ffaec5</color>
+    <color name="food_text_color">#3BB277</color>
+    <color name="film_text_color">#CD7F32</color>
+    <color name="book_text_color">#7986cb</color>
+    <color name="travel_text_color">#32cd99</color>
+
+    <color name="emotion_color">#A67D3D</color>
+    <color name="constellation_color">#A8A8A8</color>
+    <color name="lable1_bg_color">#ffd17e</color>
+    <color name="lable2_bg_color">#f7b0b0</color>
+    <color name="lable3_bg_color">#f7b0ef</color>
+
+    <color name="secondary_text">#727272</color>
+
+    <color name="item_find_love_bg">#fff</color>
+
+    <color name="line_color_blue">#3C8EAE</color>
+    <color name="bg_color_pink">#FF90A2</color>
+    <color name="bg_color_blue">#43D5FF</color>
+
+    <color name="btn_send_money_normal">#e95f38</color>
+    <color name="btn_send_money_press">#d15533</color>
+    <color name="btn_send_money_unenable">#f3af9a</color>
+    <color name="btn_send_money_text">#f3c5b6</color>
+    <color name="send_money_limit_bg">#803025</color>
+    <color name="send_money_limit_text">#e5a237</color>
+    <color name="red_packet_bg">#fb9d3a</color>
+
+    <color name="half_transparent">#e0fffbf0</color>
+
+</resources>

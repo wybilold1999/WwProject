@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:layout_margin="2dp"
+			  android:background="@android:color/white"
+			  android:orientation="vertical">
+
+	<com.facebook.drawee.view.SimpleDraweeView
+		android:id="@+id/img_url"
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:padding="3dp"
+		android:contentDescription="@null"
+		app:actualImageScaleType="fitCenter"
+		app:failureImage="@mipmap/default_pic"
+		app:placeholderImage="@mipmap/default_pic"
+		app:placeholderImageScaleType="fitCenter"
+		app:roundedCornerRadius="2dp"/>
+
+	<TextView
+		android:id="@+id/gift_name"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:gravity="center_horizontal"
+		android:text="一支玫瑰"
+		android:textColor="@color/gray_text"
+		android:textSize="12sp"/>
+
+</LinearLayout>

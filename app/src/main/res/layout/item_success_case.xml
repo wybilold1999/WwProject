@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:layout_marginTop="5dp"
+			  android:background="#fff"
+			  android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_marginTop="5dp">
+
+		<TextView
+			android:id="@+id/title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:text="两个人因为缘分而相遇"
+			android:textColor="@color/body_text_1"
+			android:textSize="18sp"/>
+
+		<TextView
+			android:id="@+id/time"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_marginTop="5dp"
+			android:text="2016-11-02"
+			android:textColor="@color/gray_text"
+			android:textSize="12sp"/>
+
+	</RelativeLayout>
+
+	<TextView
+		android:id="@+id/couple_name"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:text="张三|李四"
+		android:textColor="@color/gray_text"
+		android:textSize="14sp"/>
+
+	<com.facebook.drawee.view.SimpleDraweeView
+		android:id="@+id/image"
+		android:layout_width="match_parent"
+		android:layout_height="200dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_marginTop="5dp"
+		android:contentDescription="@null"
+		app:actualImageScaleType="centerCrop"
+		app:failureImage="@mipmap/default_pic"
+		app:placeholderImage="@mipmap/default_pic"
+		app:placeholderImageScaleType="centerCrop"
+		app:roundedCornerRadius="2dp"/>
+
+	<TextView
+		android:id="@+id/content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="8dp"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="5dp"
+		android:text="一个“微信红包”，一场“贿选风暴”？多家港媒连日来跟踪报道港大的“微信红包”风波，起因是一名内地学生在港大内部选举时发了微信红包。
+
+据香港《星岛日报》报道，香港大学校务委员会研究生代表选举上月底举行，内地研究生朱科以654票成功连任，击败获得410票的巫堃泰及另外两人。巫堃泰指控朱科在微信群组派发红包拉票，涉嫌贿选。港大校委会开会讨论后，以9票赞成7票反对驳回巫堃泰的投诉。据悉，有委员认为，朱科派出的红包是80元人民币，分给100人，每人最多不过两元，金额微不足道，不足以左右他人投票意向。
+
+港大的处理结果引发争议，港大学生会、教职及职员会和校友关注组发起联署，要求港大校委会公开交代裁决理据及就事件进行调查，联署获超过2400人响应。朱科在脸谱上回应称，“新港青年会”的微信群组由香港各大院校毕业后留港发展的青年建立，成员均已毕业，并非是具有投票资格的港大研究生选民。而微信红包是宣传补贴费用，最高金额不超过两元人民币。至于另外两个群组，他没交代成员是否包括港大研究生选民。
+
+有港媒称，港人看“微信红包”，有人认为这是不可忍受的贿选，有人认为这是“习惯、娱乐”，香港和内地文化的差异和矛盾再次被掀起。(孙小暖)"
+		android:textColor="@color/gray_text"
+		android:textSize="14sp"/>
+
+
+</LinearLayout>

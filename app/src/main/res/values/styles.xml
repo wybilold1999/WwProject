@@ -1,0 +1,128 @@
+<resources>
+
+    <style name="FrameworkRoot.Theme" parent="Theme.AppCompat.Light"/>
+
+    <style name="Theme.Base" parent="Theme">
+        <item name="actionBarIconColor">#fff</item>
+        <item name="actionBarInsetStart">@dimen/keyline_2</item>
+        <item name="homeAsUpIndicator">@mipmap/ic_up</item>
+        <item name="spinnerBarInsetStart">@dimen/keyline_2_minus_16dp</item>
+        <item name="popupItemBackground">?android:selectableItemBackground</item>
+        <item name="photoItemForeground">?android:selectableItemBackground</item>
+        <item name="photoItemForegroundBorderless">?android:selectableItemBackground</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- <item name="android:windowBackground">@android:color/white</item> -->
+        <item name="android:homeAsUpIndicator">@mipmap/ic_up</item>
+        <item name="android:popupMenuStyle">@style/Widget.IOSched.PopupMenu</item>
+        <item name="android:listPopupWindowStyle">@style/Widget.IOSched.PopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/Widget.IOSched.ListView.DropDown</item>
+        <item name="android:textAppearanceLargePopupMenu">@style/TextAppearance.LargePopupMenu</item>
+        <item name="searchViewStyle">@style/Widget.IOSched.SearchView</item>
+        <item name="actionMenuTextAppearance">@style/ActionBar.MenuText</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+    </style>
+
+    <style name="Widget.IOSched.PopupMenu" parent="Widget.AppCompat.Light.PopupMenu">
+        -->
+        <item name="android:dropDownSelector">?popupItemBackground</item>
+    </style>
+
+    <style name="Widget.IOSched.ListView.DropDown" parent="Widget.AppCompat.Light.ListView.DropDown">
+        <item name="android:listSelector">?popupItemBackground</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0dp</item>
+    </style>
+
+    <style name="TextAppearance.LargePopupMenu" parent="TextAppearance.AppCompat.Widget.PopupMenu.Large">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Widget.IOSched.SearchView" parent="Widget.AppCompat.SearchView"/>
+
+    <style name="Theme" parent="FrameworkRoot.Theme"/>
+
+    <style name="AppTheme" parent="Theme.Base"/>
+
+
+    <style name="ActionBarThemeOverlay" parent="">
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="colorControlNormal">?actionBarIconColor</item>
+        <item name="colorControlHighlight">#3fff</item>
+    </style>
+
+    <style name="ActionBarPopupThemeOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="HeaderBar">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="Theme.AppStartLoad" parent="Theme.AppCompat">
+        <item name="android:windowBackground">@mipmap/launcher_img</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ActionBar.MenuText" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Menu">
+        <item name="android:textColor">@android:color/holo_blue_dark</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- ActionBar字体 -->
+    <style name="ActionBar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TagLayout.custom">
+        <item name="tag_layout_mode">normal</item>
+        <item name="tag_layout_shape">arc</item>
+        <item name="tag_layout_random_color">true</item>
+        <item name="tag_view_text_color">@android:color/white</item>
+        <item name="tag_view_text_size">10</item>
+        <item name="tag_view_border_width">0dp</item>
+        <item name="tag_view_vertical_padding">3dp</item>
+        <item name="tag_view_horizontal_padding">2dp</item>
+        <item name="tag_layout_bg_color">@android:color/transparent</item>
+        <item name="tag_layout_border_color">@android:color/transparent</item>
+    </style>
+
+    <style name="TagLayout.custom.personal">
+        <item name="tag_layout_mode">normal</item>
+        <item name="tag_layout_shape">arc</item>
+        <item name="tag_layout_random_color">false</item>
+        <item name="tag_view_bg_color">#fff</item>
+        <item name="tag_view_vertical_padding">2dp</item>
+        <item name="tag_view_horizontal_padding">14dp</item>
+        <item name="tag_view_text_size">10</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Translucent">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="myTransparent" parent="AppTheme.NoActionBar.Translucent">
+        <item name="android:windowBackground">@color/half_transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="SwipeFling">
+        <item name="rotation_degrees">15</item>
+        <item name="min_adapter_stack">6</item>
+        <item name="max_visible">4</item>
+    </style>
+
+</resources>

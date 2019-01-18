@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:layout_gravity="center"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/material_card">
+
+        <LinearLayout
+            android:id="@+id/img_lay"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="horizontal">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/card_image_portrait"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                card:actualImageScaleType="centerCrop"
+                card:failureImage="@mipmap/default_pic"
+                card:failureImageScaleType="centerCrop"
+                card:placeholderImage="@mipmap/default_pic"
+                card:placeholderImageScaleType="centerCrop"
+                card:roundedCornerRadius="5dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/card_image_one"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@null"
+                        card:actualImageScaleType="centerCrop"
+                        card:failureImage="@mipmap/default_pic"
+                        card:failureImageScaleType="centerCrop"
+                        card:placeholderImage="@mipmap/default_pic"
+                        card:placeholderImageScaleType="centerCrop"
+                        card:roundedCornerRadius="5dp"/>
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/card_image_two"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@null"
+                        card:actualImageScaleType="centerCrop"
+                        card:failureImage="@mipmap/default_pic"
+                        card:failureImageScaleType="centerCrop"
+                        card:placeholderImage="@mipmap/default_pic"
+                        card:placeholderImageScaleType="centerCrop"
+                        card:roundedCornerRadius="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/card_image_three"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@null"
+                        card:actualImageScaleType="centerCrop"
+                        card:failureImage="@mipmap/default_pic"
+                        card:failureImageScaleType="centerCrop"
+                        card:placeholderImage="@mipmap/default_pic"
+                        card:placeholderImageScaleType="centerCrop"
+                        card:roundedCornerRadius="5dp"/>
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/card_image_four"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@null"
+                        card:actualImageScaleType="centerCrop"
+                        card:failureImage="@mipmap/default_pic"
+                        card:failureImageScaleType="centerCrop"
+                        card:placeholderImage="@mipmap/default_pic"
+                        card:placeholderImageScaleType="centerCrop"
+                        card:roundedCornerRadius="5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/card_bottom_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_lay"
+            android:paddingTop="6dp">
+
+            <TextView
+                android:id="@+id/card_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="叶琪琪 23"
+                android:textColor="#111"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_user_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="23"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/constellation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_user_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/age"
+                android:text="处女座"
+                android:textColor="@color/constellation_color"
+                android:textSize="12sp"/>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/age"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/gray_background"/>
+
+            <TextView
+                android:id="@+id/signature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:paddingBottom="20dp"
+                android:textColor="#888"
+                android:textSize="12sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:drawablePadding="2dp"
+                    android:gravity="center_horizontal"
+                    android:text="13.52km"
+                    android:textColor="#999"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:drawablePadding="2dp"
+                    android:gravity="center_horizontal"
+                    android:text="来自深圳"
+                    android:textColor="#999"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

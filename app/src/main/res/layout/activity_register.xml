@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_actionbar_with_headerbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:layout_marginTop="45dp"
+        android:orientation="vertical"
+        android:gravity="top">
+
+        <LinearLayout
+            android:id="@+id/sex_img_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+                android:id="@+id/select_man"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/radio_men_default_bg"
+                android:scaleType="fitCenter"
+                android:clickable="true"/>
+            <ImageView
+                android:id="@+id/select_lady"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/radio_women_default_bg"
+                android:scaleType="fitCenter"
+                android:clickable="true"/>
+        </LinearLayout>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:hint="@string/phone"
+            android:maxLength="11"
+            fancy:met_baseColor="@color/colorPrimary"
+            fancy:met_primaryColor="@color/colorPrimary"
+            fancy:met_floatingLabelText="@string/phone"
+            fancy:met_floatingLabel="highlight"
+            fancy:met_floatingLabelTextColor="@color/colorPrimary"
+            fancy:met_textColorHint="@color/gray_text"
+            fancy:met_underlineColor="@android:color/black"/>
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                fancy:fb_defaultColor="@color/colorPrimary"
+                fancy:fb_focusColor="@color/colorAccent"
+                fancy:fb_radius="5dp"
+                fancy:fb_text="@string/next"
+                fancy:fb_textColor="@android:color/white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="4"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="3"
+                android:text="第三方登录"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="4"
+                android:background="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/weixin_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wechat_button"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"/>
+
+            <ImageView
+                android:id="@+id/qq_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:clickable="true"
+                android:layout_gravity="left"
+                android:background="@drawable/qq_button" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

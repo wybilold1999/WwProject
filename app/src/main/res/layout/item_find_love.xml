@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_item_find_love">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/portrait"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@null"
+        app:actualImageScaleType="centerCrop"
+        app:failureImage="@mipmap/default_head"
+        app:placeholderImage="@mipmap/default_head"
+        app:placeholderImageScaleType="centerCrop"
+        app:roundedCornerRadius="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/user_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/portrait"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="小强"
+                android:textSize="16sp"
+                android:textColor="@color/body_text_1"/>
+
+            <ImageView
+                android:id="@+id/is_vip"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/vip"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="38dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/user_age_attr_radius_background"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/sex_img"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/list_female"/>
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/sex_img"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/white"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/marray_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/emotion_color" />
+
+            <TextView
+                android:id="@+id/constellation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/constellation_color" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/signature"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/gray_text"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="5dp"/>
+
+        <com.dl7.tag.TagLayout
+            android:id="@+id/tag_layout"
+            style="@style/TagLayout.custom"
+            app:tag_layout_fit_num="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:text="23.78公里"
+        android:textColor="@color/gray_text"/>
+
+</RelativeLayout>

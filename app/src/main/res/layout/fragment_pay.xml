@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  android:id="@+id/download_pay_layout"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<ImageView
+			android:id="@+id/iv_speaker"
+			android:layout_width="20dp"
+			android:layout_height="20dp"
+			android:layout_marginLeft="20dp"
+			android:layout_centerVertical="true"
+			android:src="@mipmap/ic_red_loudspeaker"/>
+
+		<com.sunfusheng.marqueeview.MarqueeView
+			android:id="@+id/marqueeView"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:layout_toRightOf="@id/iv_speaker"
+			android:paddingLeft="5dp"
+			app:mvAnimDuration="1000"
+			app:mvInterval="3000"
+			app:mvTextColor="@color/colorPrimary"
+			app:mvTextSize="14sp"/>
+	</RelativeLayout>
+
+	<android.support.v4.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="9">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="#fff">
+
+				<com.facebook.drawee.view.SimpleDraweeView
+					android:id="@+id/portrait"
+					android:layout_width="60dp"
+					android:layout_height="60dp"
+					android:padding="5dp"
+					android:layout_centerVertical="true"
+					android:layout_alignParentLeft="true"
+					android:layout_marginLeft="10dp"
+					android:contentDescription="@null"
+					app:actualImageScaleType="fitCenter"
+					app:failureImage="@mipmap/default_head"
+					app:placeholderImage="@mipmap/default_head"
+					app:placeholderImageScaleType="fitCenter"
+					app:roundAsCircle="true"/>
+
+				<TextView
+					android:id="@+id/user_name"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:layout_toRightOf="@id/portrait"
+					android:textSize="14sp"
+					android:textColor="@color/body_text_1"
+					android:text="小强"/>
+
+				<TextView
+					android:id="@+id/user_info"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dp"
+					android:layout_toRightOf="@id/portrait"
+					android:layout_below="@id/user_name"
+					android:textSize="12sp"
+					android:textColor="@color/gray_text"
+					android:text="呵呵呵呵呵呵呵呵呵呵呵呵呵"/>
+
+			</RelativeLayout>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:background="@color/gray_background"/>
+
+			<Space
+				android:layout_width="match_parent"
+				android:layout_height="10dp"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:background="@color/gray_background"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="10dp"
+				android:paddingBottom="10dp"
+				android:orientation="vertical"
+				android:background="#fff">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:textSize="16sp"
+					android:textColor="@color/body_text_1"
+					android:layout_marginLeft="35dp"
+					android:drawableLeft="@mipmap/gold"
+					android:drawablePadding="5dp"
+					android:text="赚钱会员额外特权服务"/>
+
+				<TextView
+					android:id="@+id/vip_info_first"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="75dp"
+					android:text="1.赠送价值229元无限期的会员"
+					android:textSize="14sp"/>
+
+				<TextView
+					android:id="@+id/vip_info_sec"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="75dp"
+					android:text="2.赠送2500金币(可观看视频)"
+					android:textSize="14sp"/>
+
+			</LinearLayout>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:background="@color/gray_background"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="6dp"
+				android:paddingBottom="6dp"
+				android:paddingLeft="20dp"
+				android:text="开通赚钱会员"
+				android:textSize="14sp"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:background="@color/gray_background"/>
+
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/recyclerview"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="10dp"
+				android:paddingBottom="10dp"
+				android:paddingLeft="10dp"
+				android:background="#fff"
+				android:fastScrollAlwaysVisible="true"
+				android:fastScrollEnabled="true"
+				android:scrollbarStyle="insideOverlay"
+				android:scrollbars="none"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:background="@color/gray_background"/>
+
+			<LinearLayout
+				android:id="@+id/pay_lay"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:background="@android:color/white"
+				android:layout_marginBottom="15dp">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="20dp"
+					android:layout_marginTop="8dp"
+					android:layout_marginBottom="8dp"
+					android:text="@string/pay_type"
+					android:textSize="14sp"/>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/divider_height"
+					android:background="@color/divider_color"
+					android:contentDescription="@null"/>
+
+				<RelativeLayout
+					android:id="@+id/alipay_lay"
+					android:layout_width="match_parent"
+					android:paddingLeft="12dp"
+					android:layout_height="50dp">
+
+					<ImageView
+						android:id="@+id/iv_alipay_icon"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@mipmap/pay_icon_alipay"
+						android:scaleType="centerCrop"
+						android:layout_alignParentLeft="true"
+						android:layout_centerVertical="true"
+						android:layout_marginLeft="10dp"/>
+
+					<TextView
+						android:id="@+id/tv_ali_pay"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_toRightOf="@id/iv_alipay_icon"
+						android:layout_centerVertical="true"
+						android:layout_marginLeft="10dp"
+						android:text="支付宝"/>
+
+					<ImageView
+						android:id="@+id/iv_recommend"
+						android:layout_width="35dp"
+						android:layout_height="20dp"
+						android:layout_marginLeft="10dp"
+						android:layout_toRightOf="@id/tv_ali_pay"
+						android:layout_centerVertical="true"
+						android:scaleType="fitCenter"
+						android:src="@mipmap/recommend"/>
+
+					<TextView
+						android:id="@+id/alipay_lay_info"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:layout_toRightOf="@id/iv_recommend"
+						android:layout_marginLeft="5dp"
+						android:textSize="10sp"
+						android:text="@string/pay_info"
+						android:visibility="gone"/>
+
+					<CheckBox
+						android:id="@+id/select_alipay"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:layout_marginRight="10dp"
+						android:button="@drawable/checkmark_selector"
+						android:padding="10dp" />
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="@dimen/divider_height"
+						android:layout_alignParentBottom="true"
+						android:layout_marginLeft="@dimen/divider_margin_left"
+						android:background="@color/divider_color"
+						android:contentDescription="@null"/>
+				</RelativeLayout>
+
+				<RelativeLayout
+					android:id="@+id/wechat_lay"
+					android:layout_width="match_parent"
+					android:paddingLeft="12dp"
+					android:layout_height="50dp">
+
+					<ImageView
+						android:id="@+id/iv_wechat_icon"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@mipmap/pay_icon_wechat"
+						android:scaleType="centerCrop"
+						android:layout_alignParentLeft="true"
+						android:layout_centerVertical="true"
+						android:layout_marginLeft="10dp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_toRightOf="@id/iv_wechat_icon"
+						android:layout_centerVertical="true"
+						android:layout_marginLeft="10dp"
+						android:text="微信支付"/>
+
+					<CheckBox
+						android:id="@+id/select_wechatpay"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:layout_marginRight="10dp"
+						android:button="@drawable/checkmark_selector"
+						android:padding="10dp" />
+				</RelativeLayout>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/divider_height"
+					android:background="@color/divider_color"
+					android:contentDescription="@null"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+	</android.support.v4.widget.NestedScrollView>
+
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/divider_height"
+		android:background="@color/divider_color"
+		android:contentDescription="@null"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:layout_gravity="bottom"
+		android:gravity="center_vertical"
+		android:background="@android:color/white"
+		android:orientation="vertical">
+
+		<mehdi.sakout.fancybuttons.FancyButton
+			android:id="@+id/btn_pay"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="30dp"
+			android:layout_marginRight="30dp"
+			app:fb_defaultColor="@color/colorPrimary"
+			app:fb_focusColor="@color/colorAccent"
+			app:fb_radius="5dp"
+			app:fb_text="确认支付"
+			app:fb_textColor="#ffffffff"/>
+
+	</LinearLayout>
+
+</LinearLayout>

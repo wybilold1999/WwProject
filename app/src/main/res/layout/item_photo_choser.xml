@@ -1,0 +1,46 @@
+<com.cyanbirds.wwjy.ui.widget.SquareToWidthRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center"
+    android:padding="1dp" >
+
+    <RelativeLayout
+        android:id="@+id/photo_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image_chose_selector"
+        android:gravity="center" >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img_queue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            app:actualImageScaleType="centerCrop"
+            app:failureImage="@mipmap/default_pic"
+            app:failureImageScaleType="centerCrop"
+            app:placeholderImage="@mipmap/default_pic"
+            app:placeholderImageScaleType="centerCrop"
+            app:roundedCornerRadius="5dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/v_selected_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <CheckBox
+            android:id="@+id/select_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:button="@drawable/checkmark_selector"
+            android:padding="10dp" />
+    </RelativeLayout>
+
+</com.cyanbirds.wwjy.ui.widget.SquareToWidthRelativeLayout>
